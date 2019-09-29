@@ -18,6 +18,9 @@ public class Sc_Sin : MonoBehaviour
     {
         current += speed * Time.deltaTime;
         float h = length * Mathf.Sin(current);
+
         transform.position += new Vector3(0, h, 0);
+
+
     }
 }

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ShaderStartUp/SellUpShader/SellUpShader.unity
+- path: Assets/JANGAN_project/JANGAN.unity
   isLoaded: 1
   isActive: 1

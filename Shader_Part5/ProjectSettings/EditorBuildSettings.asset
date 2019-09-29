@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/JANGAN_project/JANGAN.unity
+    guid: 23039bea80cc50f43bb5e5790d426a5c
   m_configObjects: {}

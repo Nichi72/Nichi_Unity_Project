@@ -7,6 +7,8 @@ public class GameMng : MonoBehaviour
     public GameObject cubePf;
     public GameObject cubeSpinPf;
     public GameObject cubeUpDown;
+    public GameObject objRL;
+
     int[,] map = new int[15, 15];
     int mapX, mapZ;
     const float MAP_START_POS_X = 7.5f;
@@ -17,6 +19,7 @@ public class GameMng : MonoBehaviour
     {
         iniMap();
         MakeMap();
+        MapRecursiveDivision(15,15);
     }
 
     private void MakeMap()
@@ -48,8 +51,14 @@ public class GameMng : MonoBehaviour
                 pos += Vector3.forward;
 
             }
+            Vector3 objRLVec = new Vector3(pos.x + 1, 0, MAP_START_POS_Z + MAP_START_POS_Z);
+            GameObject objRLTemp = Instantiate(objRL, objRLVec, objRL.transform.rotation);
+            objRLTemp.GetComponent<Sc_Cos>().speed = UnityEngine.Random.Range(1f, 2f);
+            objRLTemp.GetComponent<Sc_Cos>().length = UnityEngine.Random.Range(0.1f, 0.3f);
             pos.x += 1f; // Z 축 하나 끝냈으니 다음 X 값 
             pos.z = 7.5f;
+            
+
         }
     }
 

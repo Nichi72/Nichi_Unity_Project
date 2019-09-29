@@ -3,7 +3,7 @@
     Properties
     {
         _MainTex("Main Texture", 2D) = "white" {}
-        // _Color("Main Tex Color", Color) = (1,1,1,1)
+         _Color("Main Tex Color", Color) = (1,1,1,1)
         // _BumpMap("NormalMap", 2D) = "bump" {}
  
         _Outline_Bold("Outline Bold", Range(0, 1)) = 0.1
