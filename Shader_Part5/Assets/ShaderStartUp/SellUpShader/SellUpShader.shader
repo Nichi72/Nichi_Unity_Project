@@ -20,9 +20,7 @@
         {
             
             CGPROGRAM
-// 프레그마 지시자를 통해서 사용할 버텍스 쉐이더 함수, 프레그마 쉐이더 함수를 를 정해주고 구현을 하자.
-
-            
+            // 프레그마 지시자를 통해서 사용할 버텍스 쉐이더 함수, 프레그마 쉐이더 함수를 를 정해주고 구현을 하자.
 			#pragma vertex _VertexFuc
 			#pragma fragment _FragmentFuc
             // 유니티에서 지원해주는 렌더링에 필요한 기능들을 제공한다.
@@ -33,7 +31,7 @@
                 float4 vertex : POSITION; // 이 문법은 도대체 뭐지?? : 라니? 
                 float3 normal : NORMAL;
             };
-// 버텍스 쉐이더 OUTPUT ( 버텍스 좌표 )
+            // 버텍스 쉐이더 OUTPUT ( 버텍스 좌표 )
             struct ST_VertexOutput 
             {
                 float4 vertex : SV_POSITION;
@@ -70,7 +68,9 @@
         }
         cull back
         CGPROGRAM
- 
+        // 커스텀 라이트 문법!
+        // 우리가 쓸 커스템 라이트는 surf 뒤에 오는 라이트로 쓸 꺼야 
+        
         #pragma surface surf _BandedLighting    //! 커스텀 라이트 사용
  
         struct Input
@@ -89,6 +89,12 @@
         }
          
         //! 커스텀 라이트 함수
+        // 우리가 커스텀 라이트 함수를 선언 할 때 
+        // Lighting+(라이트이름) 으로 지어야 함! 우리가 먼저 쓰겠다고 한 라이트 이름 " _BandedLighting " 을 합쳐 
+        // Lighting_BandedLighting 로 함수 이름을 지은것임
+
+        // 커스텀 라이트 함수는 기본적으로 
+        //(SurfaceOutput s, float3 lightDir, float3 viewDir, float atten)를 무조건 따라야한다. 
         float4 Lighting_BandedLighting(SurfaceOutput s, float3 lightDir, float3 viewDir, float atten)
         {
             //! BandedDiffuse 조명 처리 연산
