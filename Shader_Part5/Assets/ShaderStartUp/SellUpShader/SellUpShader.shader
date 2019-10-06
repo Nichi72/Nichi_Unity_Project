@@ -102,7 +102,7 @@
             float fNDotL = dot(s.Normal, lightDir) * 0.5f + 0.5f;    //! Half Lambert 공식
  
             //! 0~1로 이루어진 fNDotL값을 3개의 값으로 고정함 <- Banded Lighting 작업
-            float fBandNum = 3.0f;
+            float fBandNum = 4.0f;
             fBandedDiffuse = ceil(fNDotL * fBandNum) / fBandNum; 
             
  
