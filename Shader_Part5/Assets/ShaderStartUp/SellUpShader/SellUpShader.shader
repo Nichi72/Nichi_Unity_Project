@@ -93,6 +93,8 @@
         // Lighting+(라이트이름) 으로 지어야 함! 우리가 먼저 쓰겠다고 한 라이트 이름 " _BandedLighting " 을 합쳐 
         // Lighting_BandedLighting 로 함수 이름을 지은것임
 
+         float4 _Color;
+
         // 커스텀 라이트 함수는 기본적으로 
         //(SurfaceOutput s, float3 lightDir, float3 viewDir, float atten)를 무조건 따라야한다. 
         float4 Lighting_BandedLighting(SurfaceOutput s, float3 lightDir, float3 viewDir, float atten)
@@ -102,13 +104,22 @@
             float fNDotL = dot(s.Normal, lightDir) * 0.5f + 0.5f;    //! Half Lambert 공식
  
             //! 0~1로 이루어진 fNDotL값을 3개의 값으로 고정함 <- Banded Lighting 작업
-            float fBandNum = 4.0f;
+            float fBandNum = 3.0f;
             fBandedDiffuse = ceil(fNDotL * fBandNum) / fBandNum; 
+
+            float3 fSpecularColor;
+            float3 fHalfVector = normalize(lightDir + viewDir);
+            float fHDotN = saturate(dot(fHalfVector , s.Normal));
+            float fPowedHDotN = pow(fHDotN , 500.0f);
+
+            float fSpecularSmooth = smoothstep(0.005 , 0.01f , fPowedHDotN);
+            fSpecularColor = fSpecularSmooth * 1.0f;
+            
             
  
             //! 최종 컬러 출력
             float4 fFinalColor;
-            fFinalColor.rgb = (s.Albedo) *
+            fFinalColor.rgb = ((s.Albedo * _Color) + fSpecularColor) *
                                  fBandedDiffuse * _LightColor0.rgb * atten;
             fFinalColor.a = s.Alpha;
  
