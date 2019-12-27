@@ -64,6 +64,7 @@
     <Compile Include="Assets\JANGAN_project\Sc_Cos.cs" />
     <Compile Include="Assets\JANGAN_project\Sc_Sin.cs" />
     <None Include="Assets\ShaderStartUp\SellUpShader\CullFront 1.shader" />
+    <None Include="Assets\ShaderStartUp\SellUpShader\albedo.shader" />
     <None Include="Assets\ShaderStartUp\SellUpShader\CullBack.shader" />
     <None Include="Assets\ShaderStartUp\celupShader.shader" />
     <None Include="Assets\ShaderStartUp\SellUpShader\TEST.shader" />
