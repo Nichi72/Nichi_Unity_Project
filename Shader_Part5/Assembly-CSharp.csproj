@@ -63,14 +63,16 @@
     <Compile Include="Assets\JANGAN_project\GameMng.cs" />
     <Compile Include="Assets\JANGAN_project\Sc_Cos.cs" />
     <Compile Include="Assets\JANGAN_project\Sc_Sin.cs" />
-    <None Include="Assets\ShaderStartUp\SellUpShader\CullFront 1.shader" />
-    <None Include="Assets\ShaderStartUp\SellUpShader\albedo.shader" />
-    <None Include="Assets\ShaderStartUp\SellUpShader\CullBack.shader" />
-    <None Include="Assets\ShaderStartUp\celupShader.shader" />
-    <None Include="Assets\ShaderStartUp\SellUpShader\TEST.shader" />
-    <None Include="Assets\ShaderStartUp\SellUpShader\CullFront.shader" />
-    <None Include="Assets\ShaderStartUp\SellUpShader\SellUpShader.shader" />
-    <None Include="Assets\ShaderStartUp\SellUpShader\NewSurfaceShader.shader" />
+    <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\Emission.shader" />
+    <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullFront 1.shader" />
+    <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\albedo.shader" />
+    <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullBack.shader" />
+    <None Include="Assets\ShaderStartUp\SellUpShader\Cel_Shader_OnlyVertex.shader" />
+    <None Include="Assets\ShaderStartUp\SellUpShader\Cel_Shader_OnlyOutline.shader" />
+    <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\TTTT.shader" />
+    <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullFront.shader" />
+    <None Include="Assets\ShaderStartUp\SellUpShader\Cel_shader.shader" />
+    <None Include="Assets\ShaderStartUp\SurfaceShader_tester.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/money/Documents/practice/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

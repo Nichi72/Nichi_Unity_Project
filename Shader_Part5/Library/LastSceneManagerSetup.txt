@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ShaderStartUp/SellUpShader/Cull.unity
+- path: Assets/ShaderStartUp/ShaderTest/ColorTest/ClorTest.unity
   isLoaded: 1
   isActive: 1
