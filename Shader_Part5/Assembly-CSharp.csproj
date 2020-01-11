@@ -68,8 +68,10 @@
     <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\albedo.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullBack.shader" />
     <None Include="Assets\ShaderStartUp\SellUpShader\Cel_Shader_OnlyVertex.shader" />
+    <None Include="Assets\ShaderStartUp\UV\Fire.shader" />
     <None Include="Assets\ShaderStartUp\SellUpShader\Cel_Shader_OnlyOutline.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\TTTT.shader" />
+    <None Include="Assets\ShaderStartUp\UV\UV_test.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullFront.shader" />
     <None Include="Assets\ShaderStartUp\SellUpShader\Cel_shader.shader" />
     <None Include="Assets\ShaderStartUp\SurfaceShader_tester.shader" />

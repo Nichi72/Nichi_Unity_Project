@@ -33,8 +33,8 @@
             float3 green = float3(0,1,0);
             float3 yellow = red + green;
             float3 multiply  = red * green;
-            float3 gray = 
-            o.Emission = multiply;
+            float3 gray = (red.r + red.g + red.b) * 0.3;
+            o.Emission = gray;
             o.Alpha = c.a;
         }
         ENDCG

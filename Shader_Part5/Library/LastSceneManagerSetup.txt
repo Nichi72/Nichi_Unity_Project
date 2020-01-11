@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ShaderStartUp/ShaderTest/ColorTest/ClorTest.unity
+- path: Assets/ShaderStartUp/UV/Fire.unity
   isLoaded: 1
   isActive: 1
