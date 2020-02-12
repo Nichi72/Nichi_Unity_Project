@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ShaderStartUp/UV/Fire.unity
+- path: Assets/ShaderStartUp/RimLight/RimLight.unity
   isLoaded: 1
   isActive: 1

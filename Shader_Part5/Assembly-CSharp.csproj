@@ -65,11 +65,14 @@
     <Compile Include="Assets\JANGAN_project\Sc_Sin.cs" />
     <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\Emission.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullFront 1.shader" />
+    <None Include="Assets\ShaderStartUp\RimLight\RimLight.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\albedo.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullBack.shader" />
     <None Include="Assets\ShaderStartUp\SellUpShader\Cel_Shader_OnlyVertex.shader" />
-    <None Include="Assets\ShaderStartUp\UV\Fire.shader" />
+    <None Include="Assets\ShaderStartUp\ShaderTest\FireTest\Fire.shader" />
+    <None Include="Assets\ShaderStartUp\ShaderTest\FireTest\Fire_UV.shader" />
     <None Include="Assets\ShaderStartUp\SellUpShader\Cel_Shader_OnlyOutline.shader" />
+    <None Include="Assets\ShaderStartUp\RimLight\RimLight_hologram.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\TTTT.shader" />
     <None Include="Assets\ShaderStartUp\UV\UV_test.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullFront.shader" />
