@@ -28,7 +28,9 @@
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
             fixed4 d = tex2D (_MainTex2, float2(IN.uv_MainTex2.x , IN.uv_MainTex2.y - _Time.y));//new
-            fixed4 c = tex2D (_MainTex, IN.uv_MainTex + d.r);
+            fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
+            //fixed4 c = tex2D (_MainTex, IN.uv_MainTex + d.r*3.0f);
+
             
             o.Emission = c.rgb;
             o.Alpha = c.a;

@@ -4,6 +4,7 @@
     {
         _Outline_Bold("Outline Bold", Range(0,1)) = 0.1
         _MainTex ("Main Texture",2D ) = "white"{}
+        _Color ("Color", Color) = (1,1,1,1)
     }
     SubShader
     {
@@ -111,6 +112,7 @@
             };
 
             float _Outline_Bold;
+            
 
 
             ST_VertexOutput _VertexFuc(ST_VertexInput stInput)
@@ -160,6 +162,7 @@
             o.Alpha = 1.0f;
 
         }
+        float4 _Color;
 
         float4 Lighting_BandedLighting (SurfaceOutput s , float3 lightDir , float3 viewDir , float atten)
         {
@@ -171,7 +174,7 @@
             fBandedDiffuse = ceil(fNDotL * fBandNum) / fBandNum;
 
             float4 fFinalColor;
-            fFinalColor.rgb = (s.Albedo) * fBandedDiffuse * _LightColor0.rgb * atten;
+            fFinalColor.rgb = (s.Albedo) * fBandedDiffuse * _LightColor0.rgb * atten * _Color;
 
             fFinalColor.a = s.Alpha;
 
