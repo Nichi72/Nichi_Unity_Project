@@ -52,6 +52,9 @@
     <UnityVersion>2018.3.14f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -68,6 +71,7 @@
     <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\Emission.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullFront 1.shader" />
     <None Include="Assets\ShaderStartUp\RimLight\RimLight.shader" />
+    <None Include="Assets\ShaderStartUp\Stencil\Stencil_OriginWrite.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\albedo.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullBack.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\Alpha\Zbuffer.shader" />
@@ -79,26 +83,29 @@
     <None Include="Assets\ShaderStartUp\ShaderTest\FireTest\Fire_UV.shader" />
     <None Include="Assets\ShaderStartUp\SellUpShader\Cel_Shader_OnlyOutline.shader" />
     <None Include="Assets\ShaderStartUp\RimLight\RimLight_hologram.shader" />
+    <None Include="Assets\ShaderStartUp\Stencil\Stencil_Origin.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\ColorTest\TTTT.shader" />
     <None Include="Assets\ShaderStartUp\UV\UV_test.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\CullTest\CullFront.shader" />
     <None Include="Assets\ShaderStartUp\ShaderTest\AlphaBlend.shader" />
     <None Include="Assets\ShaderStartUp\SellUpShader\Cel_shader.shader" />
+    <None Include="Assets\ShaderStartUp\Stencil\Stencil_OriginRead.shader" />
     <None Include="Assets\ShaderStartUp\SurfaceShader_tester.shader" />
+    <None Include="Assets\ShaderStartUp\Stencil\Stencil.shader" />
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/money/Documents/practice/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Nichi220/Desktop/Nichi_Project/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/money/Documents/practice/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Nichi220/Desktop/Nichi_Project/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/money/Documents/practice/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/Nichi220/Desktop/Nichi_Project/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/money/Documents/practice/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Nichi220/Desktop/Nichi_Project/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/money/Documents/practice/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Nichi220/Desktop/Nichi_Project/Nichi_Unity_Project/Shader_Part5/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -302,13 +309,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/money/Documents/practice/Nichi_Unity_Project/Shader_Part5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Nichi220/Desktop/Nichi_Project/Nichi_Unity_Project/Shader_Part5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/money/Documents/practice/Nichi_Unity_Project/Shader_Part5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Nichi220/Desktop/Nichi_Project/Nichi_Unity_Project/Shader_Part5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/money/Documents/practice/Nichi_Unity_Project/Shader_Part5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Nichi220/Desktop/Nichi_Project/Nichi_Unity_Project/Shader_Part5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
