@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/ShaderStartUp/Stencil/StencilTest.unity
-  isLoaded: 1
-  isActive: 1
