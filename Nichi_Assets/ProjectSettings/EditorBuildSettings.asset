@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JANGAN_project/JANGAN.unity
     guid: 23039bea80cc50f43bb5e5790d426a5c
+  - enabled: 1
+    path: Assets/0_NichiAsset/SceneLoading/SceneLoading.unity
+    guid: bd1c2cb07ec90fd48b81f81fe1233678
+  - enabled: 1
+    path: Assets/0_NichiAsset/SceneLoading/SceneLoading_Test.unity
+    guid: dab1be42166507e498d182d1884f1fd9
   m_configObjects: {}

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/StarterAsset/ObjPooling/Example/ObjPooling.unity
+- path: Assets/0_NichiAsset/SoundManagerPro/SoundManagerLab.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
